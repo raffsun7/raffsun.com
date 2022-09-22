@@ -58,6 +58,9 @@ header{
     margin-top: 48%;
     font-weight: 500;
 }
+.first_div{
+    display: none;
+}
 nav{
     height: 40%;
     width: 100%;
@@ -195,7 +198,6 @@ footer{
     font-family: monospace;
     font-size: 16px;
 }
-<<<<<<< HEAD
 .one{
     display: none;
 }
@@ -366,7 +368,7 @@ footer{
     }
     
 .first_div{
-    height: 34%;
+    height: 222px;
     width: 49px;
     background-color: #ffffff22;
     position: fixed;
@@ -376,6 +378,7 @@ footer{
 }
 .first_div .manus li:first-child {
     margin-top: 21%;
+    position: unset;
 }
 
 .first_div li {
@@ -402,5 +405,3 @@ footer{
 }
 
 
-=======
->>>>>>> ea07f8b881348821b8686e1b1ff21dde949321d0
