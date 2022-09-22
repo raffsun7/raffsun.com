@@ -5,6 +5,8 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
 body{
     background-color: black;
@@ -28,6 +30,8 @@ body{
     }
 }
 
+@media (orientation:landscape) {
+
 .title{
     height: 20%;
     width: 100%;
@@ -42,9 +46,9 @@ body{
 .title h3{
     font-family: 'Fira Code', monospace;
     font-size: 15px;
-    text-transform:
-    uppercase;
+    text-transform: uppercase;
 }
+
 
 .first_div{
     height: 36%;
@@ -144,4 +148,122 @@ ul.social_menu li a {
 ul.social_menu li a:hover {
     color: #d552ff;
     transition: 0.5s;
+}
+.first_div ul li:nth-child(2) a{
+    color: #ff5252;
+    text-shadow: 0 0 10px #ff5252;
+    cursor: default;
+}
+}
+
+@media (orientation:portrait) {
+    ::-webkit-scrollbar{
+        width: 3px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:linear-gradient(transparent,#5896FF);
+        border-radius: 8px;
+        transition: .5s
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+        background:linear-gradient(transparent,#3c06ff);
+    }
+    body{
+        background: black;
+    }
+    .title{
+        height: 60%;
+    }
+    .first_div{
+        display: none;
+    }
+    header{
+        height: 120px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+    }
+    header h1{
+        font-family: 'Dangrek', cursive;
+    }
+    header h3{
+        font-family: 'Fira Code', monospace;
+        font-size: 12px;
+    }
+    .first_div{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 400px;
+        height: 40px;
+        margin-left: 11%;
+    }
+    .first_div li{
+        float: left;
+        padding: 20px;
+    }
+    .first_div li a{
+        color: white;
+        transition: .5s;
+    }
+    .first_div li a:hover, .social li a:hover{
+        color: #ff5252;
+    }
+
+    .first_div ul li:nth-child(2) a{
+        color: #5896FF;
+        text-shadow: 0 0 10px #3c06ff;
+        cursor: default;
+    }
+    .second_div{
+        height: 485px;
+        width: 80%;
+        margin-left: 10%;
+        background-image: url('../resources/skills/sub_divition.png');
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    .sub_box{
+        float: left;
+        height: 146px;
+        width: 50%;
+        background: transparent;
+        margin-top: 16px;
+    }
+    .second_div img{
+        height: 40px;
+        padding: 5%;
+    }
+    .second_div h4{
+        color: white;
+        font-family: 'Dangrek', cursive;
+        font-weight: 100;
+        padding: 0 10px 10px 0px;
+    }
+    .social{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 40px;
+        height: 250px;
+        margin-top: -70%;
+        margin-left: 2%;
+    }
+    .social li{
+        float: left;
+        padding: 20px;
+    }
+    .social li a{
+        color: white;
+        font-size: 20px;
+        transition: .5s;
+    }
 }
