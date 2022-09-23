@@ -1,7 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alex+Brush&family=Alice&family=Dangrek&family=Fira+Code:wght@300;500&family=Montserrat+Alternates:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
+
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,#5896FF);
+    border-radius: 8px;
+    transition: .5s
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(transparent,#3c06ff);
+}
+
 body{
     background-color: black;
+}
+
+
+@media (orientation:landscape){
+
+
+    /*Header Starts From Here*/
+    /*Header "Showcase" text*/
+
+    .showcase{
+        height: 168px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sc-img{
+        height: 115px;
+        width: 492px;
+        background-image: url('../resources/gallery/Showcase.png');
+        background-size: cover;
+    }
+
+    /*Menu Bar &Social*/
+
+    .menu-items{
+        height: 50px;
+        width: 100%;
+    }
+    .menu-items .social-icons{
+        height: 100%;
+        width: 13%;
+        float: left;
+        margin-left: 17%;
+    }
+    .social-icons li{
+        float: left;
+        padding: 7%;
+        font-size: 17px;
+        margin-left: 14px;
+    }
+    .social-icons li a, nav li a{
+        color: white;
+        transition: .4s;
+        font-family: 'Fira Code', monospace;
+    }
+    .social-icons li a{
+        font-size: 20px;
+    }
+    nav li a{
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    nav{
+        height: 100%;
+        width: 33%;
+        float: left;
+        margin-left: 35%;
+    }
+    nav li{
+        float: left;
+        padding: 4%;
+        margin-left: 3px;
+    }
+    nav li:nth-child(2) a{
+        color: #FF5757;
+        cursor: default;
+    }
+    nav li:nth-child(2) a:hover{
+        color: #FF5757;
+    }
+    nav li a:hover, .social-icons li a:hover{
+        color: #698EFF;
+    }
+
+    /*header end*/
+
+    .second{
+        height: 1200px;
+        width: 100%;
+    }
+    .favourites{
+        height: 143px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
+        color: #698EFF;
+        font-family: 'Alegreya SC', serif;
+    }
+
+    /*Faourites*/
+
+    .frame1, .frame2, .frame3{
+        height: 308px;
+        width: 100%;
+    }
+    .in-frame{
+        background-image: url('../resources/gallery/frame1.png');
+    }
+    .in-frame-3{
+        background-image: url('../resources/gallery/frame3.png');
+    }
+    .in-frame, .in-frame-3{
+        height: 307px;
+        width: 250px;
+        float: left;
+        background-size: cover;
+        margin-left: 287px;
+    }
+    .in-frame-2{
+        height: 307px;
+        width: 250px;
+        float: left;
+        background-image: url('../resources/gallery/frame2.png');
+        background-size: cover;
+        margin-left: 196px;
+    }
+    .detail{
+        float: left;
+        margin-left: 182px;
+        height: 80%;
+        width: 33%;
+        margin-top: 33px;
+    }
+    .detail2{
+        float: left;
+        margin-left: 295px;
+        height: 80%;
+        width: 25%;
+        margin-top: 33px;
+    }
+    .detail h1, .detail2 h1{
+        color: white;
+        font-size: 30px;
+        padding: 13px;
+        width: 75%;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .detail p, .detail2 p{
+        font-family: 'Fira Code', monospace;
+        color: aliceblue;
+        font-size: 12px;
+        padding: 16px;
+    }
+    .book-img{
+        background-image: url('../resources/gallery/osrujole.png');
+    }
+    .book-img-2{
+        background-image: url('../resources/gallery/bela-furabar-age.png');
+    }
+    .book-img-3{
+        background-image: url('../resources/gallery/ma-ma-ma.png');
+    }
+    .book-img, .book-img-2, .book-img-3{
+        height: 247px;
+        width: 163px;
+        background-size: cover;
+        margin-top: 31px;
+        margin-left: 45px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    section.third{
+        height: 600px;
+        background-color: #121212;
+        width: 100%;
+    }
+    .box{
+        height: 60%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .recent{
+        height: 20%;
+        width: 100%;
+        font-size: 15px;
+        color: #698EFF;
+        font-family: 'Alegreya SC', serif;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .main-box{
+        width: 75%;
+        height: 94%;
+    }
+    .self1, .self2, .self3, .self4{
+        background-color: #3B3B3B;
+        height: 90%;
+        float: left;
+        width: 20%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 10px;
+    }
+
+
+    .small-frame1{
+        background-image: url('../resources/gallery/reclaim.png');
+    }
+    .small-frame2{
+        background-image: url('../resources/gallery/dopamin.png');
+    }
+    .small-frame3{
+        background-image: url('../resources/gallery/porisuddho.png');
+    }
+    .small-frame4{
+        background-image: url('../resources/gallery/dekhchen.png');
+    }
+    .small-frame1, .small-frame2, .small-frame3, .small-frame4{
+        height: 76%;
+        width: 86%;
+        background-size: cover;
+        margin-top: 7%;
+        border-radius: 10px;
+        margin-left: 7%;
+    }
+    .main-box h3{
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        color: white;
+        padding: 8% 0px;
+        font-family: 'Fira Code', monospace;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .forth{
+        height: 600px;
+        width: 100%;
+        background-color: black;
+    }
+    .two_type_lists{
+        margin: auto;
+        height: 400px;
+        width: 62%;
+        align-items: center;
+        justify-content: center;
+        display: flow-root;
+    }
+    .collection, .next{
+        width: 40%;
+        height: 86%;
+        margin-top: 2%;
+    }
+    .collection{
+        float: left;
+    }
+    .next{
+        float: right;
+    }
+    .collection h4, .next h4 {
+        font-size: 18px;
+        padding: 8%;
+        font-family: 'Fira Code', monospace;
+        margin-left: 10px;
+    }
+    .collection h4{
+        color: #ff4b4b;
+    }
+    .next h4{
+        color: #FF66C4;
+    }
+    .collection ul, .next ul{
+        color: white;
+        font-size: 10px;
+        font-family:
+        arial;
+    }
+    .collection ul li, .next ul li{
+        padding:1%;
+        margin-left:10%;
+        margin-top: 0.5%;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+    .social-icons-2{
+        display: none;
+    }
+    footer{
+        height: 79px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 7px;
+        font-family: 'Montserrat Alternates';
+    }
 }
