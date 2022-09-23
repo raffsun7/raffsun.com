@@ -223,8 +223,16 @@ body{
         margin-left: 4%;
         margin-top: 3%;
         border-radius: 10px;
+        transition: .4s;
+        filter: brightness(0.6);
     }
-
+    .self1:hover, .self2:hover, .self3:hover, .self4:hover {
+        box-shadow: 0 0 30px black;
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: #1e1e1e;
+        filter: brightness(1);
+    }
 
     .small-frame1{
         background-image: url('../resources/gallery/reclaim.png');
@@ -302,7 +310,13 @@ body{
         padding:1%;
         margin-left:10%;
         margin-top: 0.5%;
+        transition: .6s;
         font-family: 'Montserrat Alternates', sans-serif;
+    }
+    .forth li:hover{
+        cursor: default;
+        color: #698EFF;
+        font-size: 14px;
     }
     .social-icons-2{
         display: none;

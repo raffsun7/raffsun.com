@@ -193,6 +193,7 @@
             background-color: #3B3B3B;
             height: 250px;
             float: left;
+            box-shadow: 0 0 25px black;
             width: 40%;
             margin-left: 4%;
             margin-top: 3%;
