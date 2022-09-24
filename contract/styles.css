@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alex+Brush&family=Alice&family=Dangrek&family=Fira+Code:wght@300;500&family=Montserrat+Alternates:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300&family=Unica+One&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+h1, p{
+    color: white;
+}
+
+h1{
+    font-family: 'Unica One', cursive;
+}
+
+/*Header*/
+
+header{
+    height: 122px;
+    width: 100%;
+}
+.logo{
+    width: 13%;
+    height: 43%;
+    background-image: url('../resources/contact/name-logo.png');
+    background-size: cover;
+    margin-left: 15%;
+    margin-top: 2.5%;
+    float: left;
+}
+
+
+nav {
+    height: 100%;
+    width: 33%;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: contents;
+}
+nav li {
+    float: left;
+    padding: 1.5%;
+    margin-top: 2.5%;
+}
+nav li a {
+    color: white;
+    transition: .4s;
+    font-family: 'Fira Code', monospace;
+    font-size: 12.7px;
+    font-weight: 100;
+}
+nav li a:hover{
+    color: #698EFF;
+}
+nav li:first-child {
+    margin-left: 25%;
+}
+
+nav li:last-child a {
+    color: #FF5757;
+    cursor: default;
+}
+.second{
+    height: 780px;
+}
+
+.heading {
+    height: 13%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.heading h1{
+    font-size: 25.5px;
+    font-weight: 100;
+}
+
+
+.all{
+    height: 70%;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+}
+
+.cut-img{
+    width: 40%;
+    height: 60%;
+    float: left;
+    margin-top: 11%;
+    margin-left: 7%;
+}
+.cut-img img{
+    height: 358px;
+}
+.form{
+    height: 100%;
+    width: 52%;
+    float: left;
+}
+div#first, div#second {
+    height: 70%;
+    width: 50%;
+    float: left;
+}
+div#first, div#second {
+    height: 70%;
+    width: 50%;
+    float: left;
+    margin-top: 12%;
+}
+
+label#name-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0%;
+    margin-left: 11%;
+    margin-top: 22px;
+    font-family: 'Fira Code', monospace;
+}
+
+.form-control {
+    display: block;
+    width: 69%;
+    height: 2.3rem;
+    padding: 0.375rem 1.50rem;
+    background-color: transparent;
+    margin-left: 9%;
+    color: white;
+    background-clip: padding-box;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+div#first p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0%;
+    margin-left: 11%;
+    margin-top: 22px;
+    font-family: 'Fira Code', monospace;
+}
+
+div#second p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0%;
+    margin-left: 11%;
+    margin-top: 22px;
+    font-family: 'Fira Code', monospace;
+}
+
+.input-textarea {
+    display: block;
+    width: 62%;
+    height: 13.6rem;
+    padding: 0.375rem 1.50rem;
+    color: #495057;
+    background-color: transparent;
+    margin-left: 9%;
+    color: white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+::placeholder {
+    color: white;
+}
+.button {
+    height: 7%;
+    float: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+button#submit {
+    height: 100%;
+    width: 34%;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .6s;
+}
+button#submit:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
