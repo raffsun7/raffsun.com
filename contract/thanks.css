@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alex+Brush&family=Alice&family=Dangrek&family=Fira+Code:wght@300;500&family=Montserrat+Alternates:wght@300&family=Source+Sans+Pro&family=Ubuntu:wght@300&family=Unica+One&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: black;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 650px;
+}
+h1{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	font-family: ubuntu;
+	margin: auto;
+	width: 80%;
+}
+a {
+    color: #4c4cff;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
