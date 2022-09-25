@@ -189,19 +189,15 @@ ul.social_menu li a:hover{
 }
 footer{
     height: 0px;
-<<<<<<< HEAD
     width: 100%;
     background-color: transparent;
     position: absolute;
     color: white;
     margin-top: 1%;
-=======
     width: 30%;
     background-color: transparent;
     position: absolute;
     color: white;
-    margin-top: 45.5%;
->>>>>>> 26eb49c731adee882fb72432cbdaf8c393ae13fa
     text-align: center;
     font-family: monospace;
     font-size: 16px;
