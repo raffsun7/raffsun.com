@@ -37,7 +37,7 @@
       <div class="all">
         <div class="cut-img"><img src="../resources/contact/cut_frame.png" alt=""></div>
 
-        <form class="form" method="POST" action="https://formsubmit.co/raffsun1@outlook.com">
+        <form class="form" method="POST" action="https://formsubmit.co/raffsun5@gmail.com">
 
           <div id="first">
               <label id="name-label" for="name">Name</label>
@@ -46,14 +46,32 @@
               <label id="name-label" for="email">Email-Address</label>
               <input type="text" name="email" id="email" class="form-control" autocomplete="off" placeholder="Enter your email" required>
 
-              <input type="hidden" name="_next" value="https://raffsun7.github.io/raffsun.com/contract/message_sent.html">
-              <label id="name-label" for="email">Subject</label>
-              <input type="text" name="subject" id="subject" class="form-control" autocomplete="off" placeholder="Enter your Subject of message" required>
 
+              <label id="name-label" for="phone">Phone</label>
+              <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" class="form-control" autocomplete="off" placeholder="Enter your phone number" required>
+
+              <label id="name-label" for="pro-select">Your Profession</label>
+
+                <select id="pro-select" name="select" class="form-control">
+                    <option value="">Your Profession</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Self-Learner">Self-Learner</option>
+                    <option value="Professional">Professional</option>
+                </select>
+
+
+
+              <input type="hidden" name="_next" value="https://raffsun7.github.io/raffsun.com/contract/message_sent.html">
+              
           </div>
           <div id="second">
+            <label id="name-label" for="email">Subject</label>
+              <input type="text" name="subject" id="subject" class="form-control" autocomplete="off" placeholder="Enter your Subject of message" required>
+
+
               <p>Message</p>
-               <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message here..."></textarea>
+               <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message here..." required></textarea>
           </div>
 
           <div class="button">
