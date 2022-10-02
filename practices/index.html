@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gallery-Raffsun" />
+    <meta property="og:image" content="../resources/logo/social.png" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:width" content="400" />
+    <link rel="icon" href="../resources/logo/logo.png" type="image/x-icon">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script src="https://kit.fontawesome.com/4c390d8bb6.js" crossorigin="anonymous"></script>
+  </head>
+
+
+
+  <body>
+    <section class="second">
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="../resources/blog/1.png" alt="">
+                <div class="info">
+                    <h2>Education</h2>
+                    <p>Hello world, This is a slide of blogs. And it is situated in my Laptop! Nothing to
+                         say anything</p>
+                </div>
+            </div>
+
+            
+            <div class="slide">
+                <img src="../resources/blog/2.png" alt="">
+                <div class="info">
+                    <h2>History</h2>
+                    <p>Hello world, This is a slide of blogs. And it is situated in my Laptop! Nothing to
+                         say anything</p>
+                </div>
+            </div>
+
+            
+            <div class="slide">
+                <img src="../resources/blog/3.png" alt="">
+                <div class="info">
+                    <h2>Science</h2>
+                    <p>Hello world, This is a slide of blogs. And it is situated in my Laptop! Nothing to
+                         say anything</p>
+                </div>
+            </div>
+
+            
+            <div class="slide">
+                <img src="../resources/blog/4.png" alt="">
+                <div class="info">
+                    <h2>Islam</h2>
+                    <p>Hello world, This is a slide of blogs. And it is situated in my Laptop! Nothing to
+                         say anything</p>
+                </div>
+            </div>
+
+            
+            <div class="slide">
+                <img src="../resources/blog/5.png" alt="">
+                <div class="info">
+                    <h2>Books</h2>
+                    <p>Hello world, This is a slide of blogs. And it is situated in my Laptop! Nothing to
+                         say anything</p>
+                </div>
+            </div>
+
+            
+            <div class="slide">
+                <img src="../resources/blog/6.png" alt="">
+                <div class="info">
+                    <h2>Nature</h2>
+                    <p>Hello world, This is a slide of blogs. And it is situated in my Laptop! Nothing to
+                         say anything</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 5000);
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+    
+  </body>
+
+</html>
