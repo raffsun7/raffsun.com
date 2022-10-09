@@ -168,3 +168,208 @@ header{
 }
 
 
+
+
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #000;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: aliceblue;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery, .letter, .formal {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 8px grey;
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+.letter{
+    font-size: 20px;
+    color: white;
+    width: 70%;
+    display: flex;
+    height: 60rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Atma', cursive;
+}
+.sended-form{
+    height: 70rem;
+    width: 75%;
+    background-color: rgb(17, 17, 17);
+    margin: auto;
+    font-family: 'Atma', cursive;
+}
+h1.bangh{
+    font-family: 'Mukti', sans-serif;
+}
+#first{
+    font-size: 18px;
+    color: white;
+    margin:auto;
+}
+.formal{
+    display: flex;
+    justify-content: center;
+    height: 110rem;
+    width: 50%;
+    margin: auto;
+}
+label#name-label {
+    display: flex;
+    align-items: center;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0%;
+    margin-top: 48px;
+    font-family: 'Fira Code', monospace;
+}
+.form-control {
+    display: block;
+    width: 80%;
+    height: 6rem;
+    padding: 0.375rem 1.50rem;
+    background-color: transparent;
+    margin-left: 9%;
+    color: white;
+    background-clip: padding-box;
+    border: 1px solid white;
+    border-radius: 22px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+label.sub_label {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.6rem;
+}
+
+input#subject,input#email {
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Fira Code', monospace;
+    padding: 16px;
+    background:none;
+    border: 1px solid gray;
+    color: white;
+    font-size: 15px;
+    margin-top:16px;
+}
+.input-textarea{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    padding: 0.375rem 1.50rem;
+    color: #495057;
+    background-color: transparent;
+    margin-left: 0;
+    font-size: 15px;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    background-clip: padding-box;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.button {
+    height: 7%;
+    float: none;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+}
+button#submit {
+    height: 100%;
+    width: 85%;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .6s;
+}
+
+button#submit:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
