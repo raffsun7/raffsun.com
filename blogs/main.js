@@ -1,10 +1,7 @@
-const navMenu = document.getElementById('nav-menu'),
-    toggleMenu = document.getElementById('toggle-menu'),
-    closeMenu = document.getElementById('close-menu')
+//menu bar script
 
-toggleMenu.addEventListener('click', () =>{
-    navMenu.classList.toggle('show')
-})
-closeMenu.addEventListener('click', () =>{
-    navMenu.classList.remove('show')
-})
+let navigation = document.querySelector('.navigation');
+document.querySelector('.toggle').onclick = function(){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
