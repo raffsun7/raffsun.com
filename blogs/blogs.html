@@ -264,6 +264,31 @@
   <script src="main.js" type="text/javascript"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js'></script>
+
+
+<!--JS FOR SECOND SLIDER, (History)=================================================================================-->  
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 1,
+	      spaceBetween: 20,
+	      effect: 'fade',
+	      loop: true,
+	      speed: 300,
+	      mousewheel: {
+	        invert: false,
+	      },
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	        dynamicBullets: true
+	      },
+	      // Navigation arrows
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      }
+        });
+  </script>
   
 </body>
 </html>
