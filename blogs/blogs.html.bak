@@ -399,13 +399,15 @@
 
           <h1 class="seq">Wish to Subscribe?</h1>
           <label for="email" class="seq">Email Address</label>
-          <input type="text" id="email" placeholder="Email Adress" class="seq">
+          <input type="text" id="email" name="email" placeholder="Email Adress" class="seq" autocomplete="off" required>
 
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://raffsun7.github.io/raffsun.com/blogs/blogs.html#new">
+		  <input type="hidden" name="_template" value="table">
+
 
           <p class="seq">Don't Worry, we don't hound you with emails like our competitors.</p>
-          <button type="submit" class="cta seq">Join List</button>
+          <button type="submit" id="submit" class="cta seq">Join List</button>
         </div>
         <h2>Success!</h2>
       </form>
