@@ -402,10 +402,10 @@
           <input type="text" id="email" placeholder="Email Adress" class="seq">
 
           <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="#new">
+          <input type="hidden" name="_next" value="https://raffsun7.github.io/raffsun.com/blogs/blogs.html#new">
 
           <p class="seq">Don't Worry, we don't hound you with emails like our competitors.</p>
-          <button class="cta seq">Join List</button>
+          <button type="submit" class="cta seq">Join List</button>
         </div>
         <h2>Success!</h2>
       </form>
