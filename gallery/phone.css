@@ -69,8 +69,8 @@
         /*Heading*/
     
         .second{
-            height: 2200px;
             width: 100%;
+            min-height: 100vh;
         }
         .favourites{
             height: 143px;
@@ -89,7 +89,7 @@
     
     
         .frame1, .frame2, .frame3{
-            height: 700px;
+            min-height: 100vh;
             width: 100%;
             margin: auto;
             display: flex;
@@ -97,8 +97,8 @@
     
         }
         .detail, .detail2, .detail3{
-        height: 94%;
-        width: 70%;
+        height: 100%;
+        width: 100%;
         position: absolute;
         margin-top: 373px;
         text-align: center;
@@ -117,7 +117,7 @@
             color: aliceblue;
             font-size: 12px;
             padding: 16px;
-            width: 80%;
+            width: 100%;
             margin: auto;
         }
         
@@ -164,7 +164,6 @@
     /*Third section starts*/
     
         section.third{
-            height: 2000px;
             background-color: #121212;
             width: 100%;
         }

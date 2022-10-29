@@ -104,7 +104,7 @@ body{
     /*header end*/
 
     .second{
-        height: 1200px;
+        min-height: 100vh;
         width: 100%;
     }
     .favourites{
@@ -121,7 +121,7 @@ body{
     /*Faourites*/
 
     .frame1, .frame2, .frame3{
-        height: 308px;
+        min-height: 100vh;
         width: 100%;
     }
     .in-frame{
@@ -191,7 +191,7 @@ body{
         border-bottom-left-radius: 20px;
     }
     section.third{
-        height: 650px;
+        min-height: 100vh;
         background-color: #121212;
         width: 100%;
     }
@@ -585,7 +585,7 @@ button#submit:hover {
 .jaccetai{
     display: flex;
     justify-content: center;
-    height: 500px;
+    height: 100%;
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
