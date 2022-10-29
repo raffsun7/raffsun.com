@@ -405,7 +405,7 @@
           <input type="hidden" name="_next" value="#new">
 
           <p class="seq">Don't Worry, we don't hound you with emails like our competitors.</p>
-          <button type="submit" class="cta seq">Join List</button>
+          <button class="cta seq">Join List</button>
         </div>
         <h2>Success!</h2>
       </form>

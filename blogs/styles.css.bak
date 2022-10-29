@@ -1400,14 +1400,13 @@ i.fa-step-backward{
   display: block;
   background: rgb(21, 61, 182);
   color: white;
-  height:40px;
-  width:181px;
+  height:100px;
+  width:400px;
   text-decoration: none;
   padding: .8em;
   text-align: center;
   border:none;
   cursor:pointer;
-  margin: auto;
 }
 .newsltr input,
 .newsltr a{
