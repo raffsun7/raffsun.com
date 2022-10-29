@@ -588,6 +588,7 @@ button#submit:hover {
     height: 100%;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    position: absolute;
 }
 
 .container_nn{
@@ -669,7 +670,7 @@ button#submit:hover {
     width: 257px;
 }
 .recent{
-    height: 20%;
+    height: 75px;
     width: 100%;
     font-size: 15px;
     color: #698EFF;
@@ -677,25 +678,4 @@ button#submit:hover {
     align-items: center;
     justify-content: center;
     display: flex;
-}
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-@supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
-
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
 }

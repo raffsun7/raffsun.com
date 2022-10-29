@@ -101,6 +101,13 @@ opacity: 0;
 transform: translateX(-250px);
 transition-delay: calc(0.1s * var(--i));
 }
+
+.zcontainer h1:nth-child(1) {
+  font-size: 3.5rem;
+}
+.zcontainer p:nth-child(1) {
+  font-size: 17px;
+}
 .navigation.active ul li{
 visibility: visible;
 opacity: 1;
@@ -232,7 +239,7 @@ transition: 0s;
 .img-slider .slide .info p{
   color: #fff;
   background: rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  font-size: 15px;
   width: 60%;
   padding: 10px;
   font-family: 'Josefin Sans', sans-serif;
@@ -435,12 +442,15 @@ body {
 }
 
 .zcontainer p {
-  max-width: 93ch;
+  max-width: 75ch;
   line-height: 1.5;
   padding: 1em;
-  font-size: 13px;
+  font-size: 16px;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
+}
+.zsecond p{
+  font-size: 14px;
 }
 
 .zcontainer a {
@@ -1424,4 +1434,104 @@ i.fa-step-backward{
 .onstart{
   position: absolute;
   top: -150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer+++++++++++++++++++++=========================================*/
+.footer_container{
+	max-width: 900px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer ul{
+	list-style: none;
+}
+.footer{
+	background-color: #0a0f15;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 33%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #4a4cff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .footer_social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .footer_social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
